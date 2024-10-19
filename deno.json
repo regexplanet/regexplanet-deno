@@ -3,6 +3,7 @@
     "dev": "deno run --watch main.ts"
   },
   "imports": {
+    "@regexplanet/common": "jsr:@regexplanet/common@^1.0.0",
     "@std/assert": "jsr:@std/assert@1"
   }
 }

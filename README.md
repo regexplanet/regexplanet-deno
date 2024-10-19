@@ -4,4 +4,4 @@ This is the [Deno](https://www.deno.com/) backend for RegexPlanet, a tool for on
 
 See [API docs](http://github.com/regexplanet/regexplanet-next/blob/main/CONTRIBUTING.md) for what it is supposed to do.
 
-See [Bun online regex test page](http://www.regexplanet.com/advanced/deno/index.html) to use it to test your regular expressions.
+See [Deno online regex test page](http://www.regexplanet.com/advanced/deno/index.html) to use it to test your regular expressions.
