@@ -1,13 +1,13 @@
 {
   "version": "4",
   "specifiers": {
-    "jsr:@regexplanet/common@1": "1.0.0",
+    "jsr:@regexplanet/common@^1.1.0": "1.1.0",
     "jsr:@std/assert@1": "1.0.6",
     "jsr:@std/internal@^1.0.4": "1.0.4"
   },
   "jsr": {
-    "@regexplanet/common@1.0.0": {
-      "integrity": "8ff4e94680cdf36a423e8c9efea9d00b37c3dff813b47de01d226ffdc7ca0a6e"
+    "@regexplanet/common@1.1.0": {
+      "integrity": "d0a62601baf670b6fd0ebb5308b1cb837b07c46fdd0f019826753f39fa11337a"
     },
     "@std/assert@1.0.6": {
       "integrity": "1904c05806a25d94fe791d6d883b685c9e2dcd60e4f9fc30f4fc5cf010c72207",
@@ -21,7 +21,7 @@
   },
   "workspace": {
     "dependencies": [
-      "jsr:@regexplanet/common@1",
+      "jsr:@regexplanet/common@^1.1.0",
       "jsr:@std/assert@1"
     ]
   }
