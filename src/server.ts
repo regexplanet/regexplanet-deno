@@ -115,7 +115,7 @@ async function testJson(req: Request) {
 
   console.log("testInput", testInput);
 
-  const retVal = runTest(testInput);
+  const retVal = await runTest(testInput);
 
   console.log("testOutput", retVal);
 
@@ -123,7 +123,7 @@ async function testJson(req: Request) {
 }
 
 function main() {
-  const port = parseInt(Deno.env.get("PORT") || "4000");
+  const port = parseInt(Deno.env.get("PORT") || "5000");
   const hostname = Deno.env.get("HOSTNAME") || "localhost";
 
   Deno.addSignalListener("SIGINT", () => {
