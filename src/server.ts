@@ -43,6 +43,9 @@ function handleJsonp(req: Request, data: object): Response {
   return new Response(str, {
     headers: {
       "content-type": "application/json",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET",
+      "Access-Control-Max-Age": "604800",
     },
   });
 }
