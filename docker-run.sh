@@ -8,7 +8,7 @@ set -o pipefail
 set -o nounset
 
 SCRIPT_HOME="$( cd "$( dirname "$0" )" && pwd )"
-APP_NAME=dtest
+APP_NAME=regexplanet-deno
 
 ENVFILE=${1:-.env}
 
@@ -21,7 +21,6 @@ fi
 DOCKER_BUILDKIT=1 docker buildx build \
     --build-arg LASTMOD=$(date -u +%Y-%m-%dT%H:%M:%SZ) \
     --build-arg COMMIT=local@$(git rev-parse --short HEAD) \
-    --platform=linux/arm64 \
     --progress=plain \
     --tag "${APP_NAME}" \
     .
